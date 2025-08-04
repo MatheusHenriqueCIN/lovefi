@@ -142,7 +142,4 @@ app.get('/api/surprise-me', async (req, res) => {
     }
 });
 
-// Inicia o servidor
-app.listen(port, () => {
-    console.log(`Servidor backend rodando em http://localhost:${port}`);
-});
+module.exports = app; // Exporte a aplicação Express
